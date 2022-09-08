@@ -1,16 +1,16 @@
 namespace POO.Banco{
     public class ContaCorrente{
-        private string titular = "";
+        private Cliente titular;
         private string conta = "";
         private int numeroAgencia;
         private string nomeAgencia = "";
         private double saldo;
 
-         public string GetTitular(){
+         public Cliente GetTitular(){
             return titular;
         }
 
-        public void SetTitular(string titular){
+        public void SetTitular(Cliente titular){
             this.titular = titular;
         }
 
@@ -73,7 +73,7 @@ namespace POO.Banco{
         }
 
         public void DadosConta(){
-            Console.WriteLine("Titular: " + GetTitular());
+            Console.WriteLine("Titular: " + GetTitular().GetNome());
             Console.WriteLine("Conta: " + GetConta());
             Console.WriteLine("Número da Agência: " + GetNumeroAgencia());
             Console.WriteLine("Nome da Agência: " + GetNomeAgencia());
