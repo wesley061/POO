@@ -6,6 +6,10 @@ namespace POO.Banco{
         private string nomeAgencia = "";
         private double saldo;
 
+        public ContaCorrente(Cliente titular, string conta, int numeroAgencia, string nomeAgencia, double saldo){
+            // concluir
+        }
+
          public Cliente GetTitular(){
             return titular;
         }
@@ -73,7 +77,7 @@ namespace POO.Banco{
         }
 
         public void DadosConta(){
-            Console.WriteLine("Titular: " + GetTitular().GetNome());
+            //Console.WriteLine("Titular: " + GetTitular().Nome);
             Console.WriteLine("Conta: " + GetConta());
             Console.WriteLine("Número da Agência: " + GetNumeroAgencia());
             Console.WriteLine("Nome da Agência: " + GetNomeAgencia());

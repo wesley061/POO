@@ -1,31 +1,24 @@
 namespace POO{
     public class Cliente{
         private string cpf = "";
-        private string nome = "";
-        private string profissao = "";
+        public string Nome{ get; set; }
+        private string Profissao{ get; set; }
 
-        public string GetCpf(){
-            return cpf;
+        public static int QtdClientes{ get; set; }
+
+        public string Cpf{
+            get{
+                return cpf;
+            }
+            set{
+                this.cpf = value;
+            }
         }
 
-        public void SetCpf(string cpf){
+        public Cliente(string cpf, string nome){
             this.cpf = cpf;
-        }
-
-        public string GetNome(){
-            return nome;
-        }
-
-        public void SetNome(string nome){
-            this.nome = nome;
-        }
-
-        public string GetProfissao(){
-            return profissao;
-        }
-
-        public void SetProfissao(string profissao){
-            this.profissao = profissao;
+            this.Nome = nome;
+            QtdClientes ++;
         }
     }
 }
