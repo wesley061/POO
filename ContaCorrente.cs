@@ -6,8 +6,13 @@ namespace POO.Banco{
         private string nomeAgencia = "";
         private double saldo;
 
+
         public ContaCorrente(Cliente titular, string conta, int numeroAgencia, string nomeAgencia, double saldo){
-            // concluir
+            SetTitular(titular);
+            SetConta(conta);
+            SetNumeroAgencia(numeroAgencia);
+            SetNomeAgencia(nomeAgencia);
+            SetSaldo(saldo);
         }
 
          public Cliente GetTitular(){
